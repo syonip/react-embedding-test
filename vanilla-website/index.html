@@ -4,10 +4,11 @@
         <link rel="stylesheet" href="../build/static/css/main.073c9b0a.css"></link>
     </head>
     <body>
-        <script src="../build/static/js/main.3b1b56e9.js"></script>
+        <script src="../build/static/js/main.de42c5de.js"></script>
         <div id="react-root"></div>
         <div>
-            <button onClick="window.loadSignIn('react-root')">Load React Component</button>
+            <button onClick="window.signInComponent = window.loadSignIn('react-root')">Load React Component</button>
+            <button onClick="alert(window.signInComponent.getEmail());">Get Email</button>
         </div>
     </body>
 </html>

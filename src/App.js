@@ -2,10 +2,10 @@ import logo from './logo.svg';
 import './App.css';
 import SignIn from './SignIn';
 
-function App() {
+function App({ signInComponent }) {
   return (
     <div className="App">
-      <SignIn />
+      <SignIn signInComponent={signInComponent} />
     </div>
   );
 }
